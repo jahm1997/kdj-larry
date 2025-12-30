@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12" />
+      <stop offset="0.55" stop-color="#0f1b22" />
+      <stop offset="1" stop-color="#0e0f14" />
+    </linearGradient>
+    <radialGradient id="glow" cx="25%" cy="18%" r="70%">
+      <stop offset="0" stop-color="rgba(255,209,102,0.3)" />
+      <stop offset="1" stop-color="rgba(255,209,102,0)" />
+    </radialGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.16)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0.06)" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.52)" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="44" fill="url(#bg)" />
+  <rect width="1200" height="750" rx="44" fill="url(#glow)" />
+
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="480" rx="430" ry="175" fill="url(#plate)" />
+    <g opacity="0.95">
+      <circle cx="520" cy="450" r="46" fill="#ff4d6d" />
+      <circle cx="650" cy="420" r="56" fill="#ff6b86" />
+      <circle cx="680" cy="500" r="44" fill="#ff4d6d" />
+      <circle cx="560" cy="520" r="40" fill="#ff6b86" />
+      <path
+        d="M430 470c36-40 90-66 170-66s134 26 170 66c-28 42-94 76-170 76s-142-34-170-76Z"
+        fill="rgba(255,255,255,0.12)"
+      />
+      <circle cx="600" cy="470" r="58" fill="rgba(255,255,255,0.86)" />
+      <circle cx="585" cy="455" r="14" fill="rgba(0,0,0,0.08)" />
+      <circle cx="625" cy="492" r="12" fill="rgba(0,0,0,0.08)" />
+      <path d="M470 520c50 30 210 30 260 0" stroke="#6ee7ff" stroke-width="14" stroke-linecap="round" opacity="0.75" />
+      <path d="M490 410c40-22 180-22 220 0" stroke="#7cffb7" stroke-width="14" stroke-linecap="round" opacity="0.7" />
+    </g>
+  </g>
+
+  <g opacity="0.92">
+    <text x="90" y="120" font-size="42" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.86)">
+      Ensalada burrata
+    </text>
+    <text x="90" y="165" font-size="22" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.64)">
+      Placeholder didáctico (reemplázalo por tu foto)
+    </text>
+  </g>
+</svg>
+

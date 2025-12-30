@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12" />
+      <stop offset="0.6" stop-color="#201408" />
+      <stop offset="1" stop-color="#2a0f18" />
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="22%" r="70%">
+      <stop offset="0" stop-color="rgba(255,209,102,0.34)" />
+      <stop offset="1" stop-color="rgba(255,209,102,0)" />
+    </radialGradient>
+    <linearGradient id="dough" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd166" />
+      <stop offset="1" stop-color="#c07a1f" />
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(0,0,0,0)" />
+      <stop offset="1" stop-color="rgba(0,0,0,0.22)" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.5)" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="44" fill="url(#bg)" />
+  <rect width="1200" height="750" rx="44" fill="url(#glow)" />
+
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="510" rx="460" ry="170" fill="rgba(255,255,255,0.08)" />
+    <path
+      d="M320 470c0-120 110-220 246-220 58 0 102 16 134 46 32-30 76-46 134-46 136 0 246 100 246 220 0 88-52 154-126 192-54 28-116 42-254 42s-200-14-254-42c-74-38-126-104-126-192Z"
+      fill="url(#dough)"
+    />
+    <path
+      d="M394 462c14-58 62-108 126-136 52-22 104-26 128-10-46 18-86 50-110 92-22 40-28 86-14 126-50-10-98-32-130-72Z"
+      fill="rgba(255,255,255,0.12)"
+    />
+    <path
+      d="M806 462c-14-58-62-108-126-136-52-22-104-26-128-10 46 18 86 50 110 92 22 40 28 86 14 126 50-10 98-32 130-72Z"
+      fill="rgba(0,0,0,0.12)"
+    />
+    <path
+      d="M320 470c0-120 110-220 246-220 58 0 102 16 134 46 32-30 76-46 134-46 136 0 246 100 246 220 0 88-52 154-126 192-54 28-116 42-254 42s-200-14-254-42c-74-38-126-104-126-192Z"
+      fill="url(#shade)"
+      opacity="0.9"
+    />
+  </g>
+
+  <g opacity="0.92">
+    <text x="90" y="120" font-size="42" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.86)">
+      Croissant de almendra
+    </text>
+    <text x="90" y="165" font-size="22" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.64)">
+      Placeholder didáctico (reemplázalo por tu foto)
+    </text>
+  </g>
+</svg>
+

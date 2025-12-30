@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12" />
+      <stop offset="0.55" stop-color="#1b1323" />
+      <stop offset="1" stop-color="#0f1b22" />
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="20%" r="70%">
+      <stop offset="0" stop-color="rgba(110,231,255,0.36)" />
+      <stop offset="1" stop-color="rgba(110,231,255,0)" />
+    </radialGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4f7" />
+      <stop offset="1" stop-color="#f7cfe2" />
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd166" />
+      <stop offset="1" stop-color="#c48b2a" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.5)" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="44" fill="url(#bg)" />
+  <rect width="1200" height="750" rx="44" fill="url(#glow)" />
+
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="520" rx="460" ry="170" fill="rgba(255,255,255,0.08)" />
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(270 280)">
+      <path d="M110 330h180l-24-190H134l-24 190Z" fill="url(#cup)" />
+      <path d="M126 170c12-86 38-128 74-128s62 42 74 128c-20 18-48 30-74 30s-54-12-74-30Z" fill="url(#cream)" />
+      <circle cx="200" cy="88" r="14" fill="#ff4d6d" />
+    </g>
+    <g transform="translate(470 250) scale(1.05)">
+      <path d="M110 330h180l-26-205H136l-26 205Z" fill="url(#cup)" />
+      <path d="M126 160c14-98 42-146 74-146s60 48 74 146c-20 18-48 30-74 30s-54-12-74-30Z" fill="url(#cream)" />
+      <circle cx="200" cy="74" r="16" fill="#ffd166" />
+      <circle cx="176" cy="100" r="10" fill="#ff4d6d" opacity="0.85" />
+    </g>
+    <g transform="translate(670 280)">
+      <path d="M110 330h180l-24-190H134l-24 190Z" fill="url(#cup)" />
+      <path d="M126 170c12-86 38-128 74-128s62 42 74 128c-20 18-48 30-74 30s-54-12-74-30Z" fill="url(#cream)" />
+      <circle cx="218" cy="94" r="12" fill="#6ee7ff" />
+    </g>
+  </g>
+
+  <g opacity="0.92">
+    <text x="90" y="120" font-size="42" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.86)">
+      Cupcakes de vainilla
+    </text>
+    <text x="90" y="165" font-size="22" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.64)">
+      Placeholder didáctico (reemplázalo por tu foto)
+    </text>
+  </g>
+</svg>
+

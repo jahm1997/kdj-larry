@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12" />
+      <stop offset="0.6" stop-color="#15141b" />
+      <stop offset="1" stop-color="#1c0f12" />
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="22%" r="70%">
+      <stop offset="0" stop-color="rgba(255,77,109,0.28)" />
+      <stop offset="1" stop-color="rgba(255,77,109,0)" />
+    </radialGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.16)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0.06)" />
+    </linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe7b0" />
+      <stop offset="1" stop-color="#ffd166" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.52)" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="44" fill="url(#bg)" />
+  <rect width="1200" height="750" rx="44" fill="url(#glow)" />
+
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="480" rx="430" ry="175" fill="url(#plate)" />
+    <path
+      d="M410 470c0-60 85-108 190-108s190 48 190 108-85 108-190 108-190-48-190-108Z"
+      fill="url(#rice)"
+      opacity="0.96"
+    />
+    <g opacity="0.92">
+      <path d="M510 420c0-18 22-32 48-32s48 14 48 32-22 32-48 32-48-14-48-32Z" fill="#7b5b3a" />
+      <path d="M640 440c0-20 26-36 56-36s56 16 56 36-26 36-56 36-56-16-56-36Z" fill="#6a4b2e" />
+      <path d="M520 500c0-16 20-28 44-28s44 12 44 28-20 28-44 28-44-12-44-28Z" fill="#8c6841" />
+      <path d="M660 505c0-16 20-28 44-28s44 12 44 28-20 28-44 28-44-12-44-28Z" fill="#7a5a38" />
+      <path d="M460 540c50 22 230 22 280 0" stroke="#6ee7ff" stroke-width="14" stroke-linecap="round" opacity="0.7" />
+    </g>
+  </g>
+
+  <g opacity="0.92">
+    <text x="90" y="120" font-size="42" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.86)">
+      Risotto de setas
+    </text>
+    <text x="90" y="165" font-size="22" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.64)">
+      Placeholder didáctico (reemplázalo por tu foto)
+    </text>
+  </g>
+</svg>
+

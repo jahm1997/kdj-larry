@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Repostería y Gourmet KDJ: repostería artesanal y carta gourmet con experiencia de restaurante."
+    />
+    <title>Repostería y Gourmet KDJ</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="header" data-header>
+      <div class="container header__content">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">KDJ</span>
+          <span class="brand__text">
+            <span class="brand__title">Repostería & Gourmet</span>
+            <span class="brand__subtitle">KDJ</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+          <button class="nav__toggle" type="button" data-nav-toggle aria-controls="navMenu" aria-expanded="false">
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+          <div class="nav__menu" id="navMenu" data-nav-menu>
+            <a class="nav__link" href="#menu">Menú</a>
+            <a class="nav__link" href="#galeria">Galería</a>
+            <a class="nav__link" href="#experiencia">Experiencia</a>
+            <a class="nav__link" href="#contacto">Contacto</a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <button class="chip" type="button" data-theme-toggle>
+            <span class="chip__dot" aria-hidden="true"></span>
+            <span class="chip__text" data-theme-label>Tema</span>
+          </button>
+          <a class="btn btn--primary" href="#contacto">Reservar</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-label="Portada">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="kicker">Repostería artesanal · Restaurante gourmet</p>
+            <h1 class="hero__title">Una vitrina dulce, una carta que sorprende.</h1>
+            <p class="hero__lead">
+              En Repostería y Gourmet KDJ combinamos pastelería fina con platos de autor. Ideal para celebrar, regalar o
+              cenar con estilo.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#menu">Ver menú</a>
+              <a class="btn btn--ghost" href="#galeria">Ver galería</a>
+            </div>
+
+            <div class="hero__badges" role="list" aria-label="Beneficios">
+              <div class="badge" role="listitem">
+                <span class="badge__title">Hecho en casa</span>
+                <span class="badge__text">recetas con ingredientes reales</span>
+              </div>
+              <div class="badge" role="listitem">
+                <span class="badge__title">Gourmet</span>
+                <span class="badge__text">platos con técnica y sabor</span>
+              </div>
+              <div class="badge" role="listitem">
+                <span class="badge__title">Eventos</span>
+                <span class="badge__text">mesas dulces y cenas privadas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="heroCard heroCard--dessert">
+              <div class="heroCard__media">
+                <img
+                  src="images/reposteria/tarta-frutos-rojos.svg"
+                  alt=""
+                  width="520"
+                  height="360"
+                  loading="lazy"
+                />
+              </div>
+              <div class="heroCard__meta">
+                <span class="heroCard__pill">Repostería</span>
+                <span class="heroCard__name">Tarta frutos rojos</span>
+              </div>
+            </div>
+
+            <div class="heroCard heroCard--gourmet">
+              <div class="heroCard__media">
+                <img src="images/gourmet/salmon-citricos.svg" alt="" width="520" height="360" loading="lazy" />
+              </div>
+              <div class="heroCard__meta">
+                <span class="heroCard__pill">Gourmet</span>
+                <span class="heroCard__name">Salmón a los cítricos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="menu" aria-label="Menú">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2 class="section__title">Menú & carta</h2>
+              <p class="section__lead">
+                Explora dos mundos: repostería para antojos y regalos; gourmet para experiencias completas.
+              </p>
+            </div>
+            <div class="segmented" role="tablist" aria-label="Categorías del menú">
+              <button class="segmented__btn is-active" type="button" role="tab" aria-selected="true" data-filter="reposteria">
+                Repostería
+              </button>
+              <button class="segmented__btn" type="button" role="tab" aria-selected="false" data-filter="gourmet">
+                Gourmet
+              </button>
+              <button class="segmented__btn" type="button" role="tab" aria-selected="false" data-filter="todo">
+                Todo
+              </button>
+            </div>
+          </div>
+
+          <div class="toolbar" aria-label="Búsqueda y filtros">
+            <label class="field field--search">
+              <span class="sr-only">Buscar</span>
+              <input type="search" placeholder="Buscar por nombre, ingrediente o etiqueta…" data-search />
+            </label>
+            <div class="chips" role="list" aria-label="Etiquetas sugeridas">
+              <button class="chip chip--small" type="button" data-tag="popular">Popular</button>
+              <button class="chip chip--small" type="button" data-tag="sin-gluten">Sin gluten</button>
+              <button class="chip chip--small" type="button" data-tag="veg">Veg</button>
+              <button class="chip chip--small" type="button" data-tag="premium">Premium</button>
+            </div>
+          </div>
+
+          <div class="grid" data-menu-grid aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="galeria" aria-label="Galería">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2 class="section__title">Galería</h2>
+              <p class="section__lead">Ideas para tu próxima visita: dulce, salado y todo lo que hay en medio.</p>
+            </div>
+            <div class="hint">
+              <span class="hint__dot" aria-hidden="true"></span>
+              <span class="hint__text">Toca una foto para ampliar</span>
+            </div>
+          </div>
+
+          <div class="gallery" data-gallery>
+            <button class="gallery__item" type="button" data-lightbox="images/reposteria/cupcakes-vainilla.svg">
+              <img src="images/reposteria/cupcakes-vainilla.svg" alt="Cupcakes de vainilla con crema" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-lightbox="images/reposteria/croissant-almendra.svg">
+              <img src="images/reposteria/croissant-almendra.svg" alt="Croissant de almendra" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-lightbox="images/gourmet/ensalada-burrata.svg">
+              <img src="images/gourmet/ensalada-burrata.svg" alt="Ensalada con burrata y tomates" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-lightbox="images/gourmet/risotto-setas.svg">
+              <img src="images/gourmet/risotto-setas.svg" alt="Risotto cremoso de setas" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-lightbox="images/reposteria/cheesecake-limon.svg">
+              <img src="images/reposteria/cheesecake-limon.svg" alt="Cheesecake de limón" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-lightbox="images/gourmet/postre-maridaje.svg">
+              <img src="images/gourmet/postre-maridaje.svg" alt="Postre gourmet con maridaje" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia" aria-label="Experiencia">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2 class="section__title">La experiencia KDJ</h2>
+              <p class="section__lead">Didáctica por dentro: una web simple que se siente “pro”.</p>
+            </div>
+          </div>
+
+          <div class="features">
+            <article class="feature">
+              <h3 class="feature__title">Menú dinámico</h3>
+              <p class="feature__text">Se genera con JavaScript, con búsqueda, etiquetas y modal de detalle.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Diseño moderno</h3>
+              <p class="feature__text">Variables CSS, cards, gradientes y sombras suaves; totalmente responsive.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Tema claro/oscuro</h3>
+              <p class="feature__text">Guarda tu preferencia en el navegador para que se mantenga.</p>
+            </article>
+          </div>
+
+          <div class="reviews" aria-label="Reseñas">
+            <article class="review">
+              <p class="review__quote">“La tarta quedó perfecta para el cumpleaños. Presentación impecable.”</p>
+              <p class="review__meta">— Camila · Mesa dulce</p>
+            </article>
+            <article class="review">
+              <p class="review__quote">“Platos con nivel de restaurante. El risotto es un 10/10.”</p>
+              <p class="review__meta">— Andrés · Cena</p>
+            </article>
+            <article class="review">
+              <p class="review__quote">“Me encanta que puedas ver todo y filtrar rápido. Súper cómodo.”</p>
+              <p class="review__meta">— Laura · Para llevar</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="contacto" aria-label="Contacto">
+        <div class="container contact">
+          <div class="contact__panel">
+            <h2 class="section__title">Reserva o pide para llevar</h2>
+            <p class="section__lead">
+              Cuéntanos qué necesitas y te respondemos. También puedes adaptar esta sección a WhatsApp o redes.
+            </p>
+
+            <div class="contact__info" role="list" aria-label="Información">
+              <div class="info" role="listitem">
+                <span class="info__label">Horario</span>
+                <span class="info__value">Mar–Dom · 10:00–20:00</span>
+              </div>
+              <div class="info" role="listitem">
+                <span class="info__label">Ubicación</span>
+                <span class="info__value">Ciudad · Sector gourmet</span>
+              </div>
+              <div class="info" role="listitem">
+                <span class="info__label">Pedidos</span>
+                <span class="info__value">Repostería · Eventos · Restaurante</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" data-contact-form>
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Nombre</span>
+                <input name="nombre" autocomplete="name" required minlength="2" placeholder="Tu nombre" />
+              </label>
+              <label class="field">
+                <span class="field__label">Teléfono</span>
+                <input name="telefono" autocomplete="tel" required placeholder="+57 300 000 0000" />
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field__label">Correo</span>
+              <input name="correo" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com" />
+            </label>
+
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Tipo</span>
+                <select name="tipo" required>
+                  <option value="reposteria">Repostería</option>
+                  <option value="gourmet">Gourmet</option>
+                  <option value="evento">Evento</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Fecha</span>
+                <input name="fecha" type="date" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field__label">Mensaje</span>
+              <textarea
+                name="mensaje"
+                rows="4"
+                required
+                placeholder="Ej: Quiero una mesa dulce para 30 personas / Reservar para 2 / Pedir 12 cupcakes…"
+              ></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <p class="form__hint" data-form-hint>Al enviar, se simula el envío (sin backend).</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">KDJ</span>
+          <div>
+            <p class="footer__title">Repostería y Gourmet KDJ</p>
+            <p class="footer__text">Hecho con amor, servido con estilo.</p>
+          </div>
+        </div>
+        <div class="footer__links" aria-label="Enlaces">
+          <a href="#menu">Menú</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="modal" data-modal>
+      <div class="modal__content">
+        <button class="modal__close" type="button" data-modal-close aria-label="Cerrar">×</button>
+        <div class="modal__body" data-modal-body></div>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox" data-lightbox-modal>
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar">×</button>
+      <img class="lightbox__img" data-lightbox-img alt="" />
+    </dialog>
+  </body>
+</html>
+

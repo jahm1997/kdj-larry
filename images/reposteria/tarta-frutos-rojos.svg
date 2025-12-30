@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#240611" />
+      <stop offset="0.55" stop-color="#3a1220" />
+      <stop offset="1" stop-color="#0b0d12" />
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="18%" r="65%">
+      <stop offset="0" stop-color="rgba(255,77,109,0.5)" />
+      <stop offset="1" stop-color="rgba(255,77,109,0)" />
+    </radialGradient>
+    <linearGradient id="cake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9f0" />
+      <stop offset="1" stop-color="#ffd3de" />
+    </linearGradient>
+    <linearGradient id="jam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d6d" />
+      <stop offset="1" stop-color="#b5173f" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.55)" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" rx="44" fill="url(#bg)" />
+  <rect width="1200" height="750" rx="44" fill="url(#glow)" />
+
+  <g filter="url(#shadow)">
+    <ellipse cx="610" cy="470" rx="360" ry="140" fill="rgba(255,255,255,0.06)" />
+    <ellipse cx="600" cy="450" rx="380" ry="150" fill="rgba(255,255,255,0.08)" />
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M320 410c0-92 125-168 280-168s280 76 280 168-125 168-280 168-280-76-280-168Z" fill="url(#cake)" />
+    <path
+      d="M360 390c32-66 123-112 240-112 122 0 216 50 244 120-26 54-126 92-244 92-113 0-208-34-240-100Z"
+      fill="url(#jam)"
+      opacity="0.95"
+    />
+    <path
+      d="M420 510c0-45 80-82 180-82s180 37 180 82-80 82-180 82-180-37-180-82Z"
+      fill="rgba(0,0,0,0.12)"
+    />
+  </g>
+
+  <g>
+    <circle cx="450" cy="350" r="24" fill="#ff4d6d" />
+    <circle cx="520" cy="318" r="20" fill="#ff6b86" />
+    <circle cx="595" cy="304" r="18" fill="#b5173f" />
+    <circle cx="665" cy="318" r="20" fill="#ff4d6d" />
+    <circle cx="735" cy="350" r="24" fill="#ff6b86" />
+    <circle cx="560" cy="360" r="16" fill="#ffd166" opacity="0.8" />
+    <circle cx="635" cy="365" r="14" fill="#ffd166" opacity="0.8" />
+  </g>
+
+  <g opacity="0.92">
+    <text x="90" y="120" font-size="42" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.86)">
+      Tarta frutos rojos
+    </text>
+    <text x="90" y="165" font-size="22" font-family="system-ui,Segoe UI,Arial" fill="rgba(255,255,255,0.64)">
+      Placeholder didáctico (reemplázalo por tu foto)
+    </text>
+  </g>
+</svg>
+
