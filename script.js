@@ -346,9 +346,33 @@ function setupContactForm() {
     e.preventDefault()
     const data = new FormData(form)
     const nombre = (data.get("nombre") || "").toString().trim()
+    const telefono = (data.get("telefono") || "").toString().trim()
+    const correo = (data.get("correo") || "").toString().trim()
     const tipo = (data.get("tipo") || "").toString()
-    if (hint) hint.textContent = `Listo, ${nombre || "gracias"}. Simulación enviada para: ${tipo}.`
-    form.reset()
+    const fecha = (data.get("fecha") || "").toString()
+    const mensaje = (data.get("mensaje") || "").toString().trim()
+
+    const phone = "573042049489"
+    const texto = [
+      `Hola, soy ${nombre || "un cliente"}.`,
+      "",
+      `Quiero hacer un pedido de tipo: ${tipo || "sin especificar"}.`,
+      fecha ? `Fecha: ${fecha}` : "",
+      telefono ? `Teléfono: ${telefono}` : "",
+      correo ? `Correo: ${correo}` : "",
+      "",
+      "Mensaje:",
+      mensaje || "(sin mensaje adicional)",
+      "",
+      "Enviado desde la web de Repostería y Gourmet KDJ.",
+    ]
+      .filter(Boolean)
+      .join("\n")
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(texto)}`
+
+    if (hint) hint.textContent = "Abriendo WhatsApp con tu pedido…"
+    window.open(url, "_blank")
   })
 }
 
@@ -359,4 +383,3 @@ setupMenuFiltering()
 setupItemModal()
 setupLightbox()
 setupContactForm()
-
